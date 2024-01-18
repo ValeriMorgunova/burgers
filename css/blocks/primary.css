@@ -1,0 +1,19 @@
+.main {
+  background-image: url("../img/bg/video-bg.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover; }
+
+.container__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.part__left {
+  width: 50%; }
+
+.part__right {
+  width: 50%; }
+
+.main__title {
+  color: #f9b43b; }

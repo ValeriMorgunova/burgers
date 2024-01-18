@@ -1,0 +1,221 @@
+.team {
+	background-image: url(../img/bg/team.png);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+	text-align: center;
+	position: relative;
+}
+
+
+
+.team__container {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: #2e3032;
+	opacity: 0.9; 
+	padding: 5%;
+
+	@include tablets {
+    	width: 100%;
+
+    }
+}
+
+.team__block {
+	@include tablets {
+		position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%,-50%);
+    	padding-bottom: 60px;
+    }
+}
+
+.team__title {
+	color: #f9b43b;
+	margin: 0 0 40px 0;
+	text-align: left;
+
+	 @include tablets {
+    	text-align: center;
+    }
+
+     @include phones {
+	  font-size: 45px;
+	  margin: 15px 0;
+	  }
+
+	 
+}
+
+.team__acco  {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+
+	 @include tablets {
+    	text-align: center;
+    }
+}
+
+.team-acco__item {
+	margin-bottom: 35px;
+
+	 @include phones {
+	  margin-bottom: 15px;
+	  }
+
+	  @include small-phones {
+		margin-bottom: 5px;
+		}
+}
+
+.team-acco__item:last-child {
+	margin-bottom: 0;
+}
+
+.team-acco__block {
+	color: #fff;
+	margin-top: 18px;
+	display: none;
+
+	@include phones {
+		margin-top: 5px;
+		}
+}
+
+.team-acco__link {
+	color: #fff;
+	font-family: 'gagalin';
+	text-transform: uppercase;
+	cursor: pointer;
+	position: relative;
+	font-stretch: normal;
+    line-height: 2.31;
+    letter-spacing: normal;
+
+	@include tablets {
+    	font-size: 26px;
+    }
+
+    @include phones {
+	  font-size: 17px;
+	  }
+}
+
+.team-acco__link:before {
+	content: "";
+	border: 5px solid transparent;
+	border-top: 5px solid #f9b43b;
+	position: absolute;
+	left: -18px;
+	top: 7px;
+
+	@include tablets {
+    	top: 13px;
+    	border: 7px solid transparent;
+	    border-top: 7px solid #f9b43b;
+	    left: -21px;
+    }
+
+    @include phones {
+    	top: 8px;
+    	border: 7px solid transparent;
+	    border-top: 7px solid #f9b43b;
+	    left: -21px;
+    }
+
+}
+
+.team-acco__link.active, .team-acco__link:hover {
+	color: #f9b43b;
+}
+
+.team-acco__link.active + .team-acco__block {
+	display: block;
+}
+
+.team-acco__link.active:before {
+	transform: rotate(180deg);
+	top: 2px;
+	
+	@include tablets {
+    	top: 7px;
+    	border: 7px solid transparent;
+	    border-top: 7px solid #f9b43b;
+	    left: -22px;
+	    transform: rotate(180deg);
+    }
+
+    @include phones {
+    	top: 2px;
+    	border: 7px solid transparent;
+	    border-top: 7px solid #f9b43b;
+	    left: -22px;
+	    transform: rotate(180deg);
+    }
+}
+
+
+
+.team-acco__photo {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	float: left;
+	margin-right: 20px;
+
+	@include tablets {
+    	float: initial;
+    	margin: 0 auto;
+	}
+	
+	@include small-phones {
+    	width: 80px;
+		height: 80px;
+    }
+}
+
+.team-acco__photo-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.team-acco__description {
+	float: left;
+	width: 230px;
+
+	@include tablets {
+    	margin-top: 15px;
+	}
+	
+	
+
+}
+
+.team-acco__name {
+	margin-bottom: 16px;
+	font-weight: 700;
+
+	@include small-phones {
+    	margin-bottom: 5px;
+	}
+	
+
+	
+}
+
+.team-acco__text {
+	line-height: 1.71;
+	letter-spacing: 0.7px;
+	@include small-phones {
+		line-height: 1.41;
+    }
+}

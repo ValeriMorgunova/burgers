@@ -1,0 +1,14 @@
+.success{
+  text-align: center;
+  font-size: 16px;
+  font-family: 'ubuntu';
+  color: #f9b43b;
+}
+
+.error{
+  text-align: center;
+  font-size: 16px;
+  font-family: 'ubuntu';
+  color: #f9b43b;
+}
+

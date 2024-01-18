@@ -1,0 +1,101 @@
+.footer {
+	background: url(../img/bg/footer.png) center bottom no-repeat;
+	background-size: cover;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	height: 60px;
+	align-items: center;
+	padding: 0 80px;
+
+	
+	@include tablets {
+    margin-bottom: 0;
+  }
+
+	@include phones {
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	height: 100px;
+  }
+}
+
+.social__item {
+	display: inline-block;
+}
+
+.social__icon {
+	width: 23px;
+	height: 23px;
+}
+
+.contacts {
+	width: 50%;
+	text-align: left;
+	font-family: 'ubuntu';
+	color: #ffffff;
+	font-size: 14px;
+	margin: 0 80px;
+
+	@include tablets{
+    margin: 0;
+  }
+
+  @include phones {
+    width: 100%;  
+    margin: 0;  
+  }
+}
+
+.adress {
+	margin-bottom: 10px;
+
+	@include phones {
+     font-size: 13px;
+     text-align: center;
+  }
+}
+
+.phone {
+	@include phones {
+    margin-bottom: 10px;
+    text-align: center;    
+  }
+}
+
+.phone-number {
+	font-weight: 700;
+	color: #e45028;
+
+}
+
+.social {
+	width: 50%;
+	text-align: right;
+
+	@include phones {
+	  width: 100%;
+	  text-align: center;
+	  }
+}
+
+
+
+.social__item {
+	padding: 0 10px;
+
+}
+
+.social__icon {
+	fill: #555555;
+}
+
+.social__icon:hover {
+	fill: #ffffff;
+	transform: scale(1.4);
+	transition: 0.4s;
+}

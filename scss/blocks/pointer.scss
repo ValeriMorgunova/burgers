@@ -1,0 +1,58 @@
+.pointer__list {
+	position: fixed;
+	top: 100px;
+	right: 40px;
+	display: none;
+
+	@include tablets {
+    	display: none;
+    }
+}
+
+.pointer__item {
+	margin-bottom: 8px;
+}
+
+.pointer__link {
+	width: 16px;
+	height: 16px;
+	position: relative;
+	display: block;
+	
+}
+
+.pointer__link:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #ffffff;
+	top: 0;
+	left: 0;
+	transform: translate(-50%, -50%);
+}
+
+.pointer__link:before {
+	display: block;
+	width: 0px;
+	height: 0px;
+	content: "";
+	position: absolute;
+	transform: translate(-50%, -50%);
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+	transition: 0.3s;
+}
+
+.pointer__item:hover .pointer__link:before {
+	width: 15px;
+	height: 15px;
+}
+
+.pointer__item.is-active .pointer__link:before {
+	width: 15px;
+	height: 15px;
+}
+
